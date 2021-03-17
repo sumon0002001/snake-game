@@ -9,8 +9,9 @@ let headY = 10;
 
 
 function drawGame() {
-
     clearScreen();
+    drawSnake();
+    
     setTimeout(drawGame, 100/speed);
 }
 
@@ -18,5 +19,10 @@ const clearScreen = () => {
     ctx.fillStyle = 'black';
     ctx.fillRect(0,0,canvas.width,canvas.height);
 };
+
+function drawSnake() {
+    ctx.fillStyle =  'orange';
+    ctx.fillRect(headX * tileCount, headY* tileCount, tileSize,tileSize);
+}
 
 drawGame();
