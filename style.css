@@ -14,3 +14,11 @@ body {
 canvas{
     box-shadow: black 20px 10px 50px;
 }
+
+.btn {
+    font-size: 3rem;
+    width: 25%;
+    background-color: blueviolet;
+    box-shadow: 10px 10px;
+    border-radius: 25%;
+}
